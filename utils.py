@@ -6,3 +6,9 @@ def degree_of_five(numb):
     while numb % 5 == 0:
         numb /= 5
     return numb == 1
+
+
+def gcd(x, y):
+    while y != 0:
+        x, y = y, x % y
+    return x
